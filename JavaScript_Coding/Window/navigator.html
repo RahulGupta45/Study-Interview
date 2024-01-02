@@ -1,0 +1,20 @@
+<html lang="en">
+<body>
+<button onclick="browserInfo()">Browser Information </button>
+<p id ="display"/>
+
+<script>
+	
+	function browserInfo(){
+		cookiesEnabled = navigator.cookieEnabled;
+		platform = navigator.platform;
+		lang = navigator.language;
+	
+	
+	strData = "Is cookies enabled: "+cookiesEnabled + "<br/>platform: "+platform +"<br/>language: " +lang;
+	document.getElementById("display").innerHTML = strData;
+	}
+</script>
+
+</body>
+</html>

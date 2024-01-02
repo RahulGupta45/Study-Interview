@@ -1,0 +1,28 @@
+<html lang="en">
+
+<body>
+	
+	<button onclick="promptDialog()">Prompt</button>
+	<p id="name"></p>
+	<p id="sal"></p>
+<script>
+	let names = 'ABC';
+	let salary = '1000';
+	document.getElementById('name').innerHTML = "Name : "+names;
+	document.getElementById('sal').innerHTML = "Salary : "+salary;
+	
+	function promptDialog(){
+		let strName = prompt("Enter your name");
+		
+		if(strName.length>0){
+			alert("Hello, Welcome s"+strName);
+		}else{
+			alert("Enter valid name");
+		}
+	}
+</script>
+
+
+</body>
+</html>
+	

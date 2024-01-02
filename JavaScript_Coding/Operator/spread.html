@@ -1,0 +1,24 @@
+<html lang="en">
+<body>
+<button onclick="displayFruits()">Display Fruits</button>
+<p id="display"/>
+<script>
+	
+	
+	function displayFruits(){
+	
+		arrNames = ["apple","banana","grapes","oranges","chickoo"];
+		arrFruits = ["Pineapple", ...arrNames];
+		strDataToDisplay = "<ul>";
+		
+		for(strFruit of arrFruits)
+			strDataToDisplay += "<li>"+strFruit+"</li>";
+			
+		strDataToDisplay += "</ul>";
+		
+		document.getElementById("display").innerHTML = strDataToDisplay;
+	}
+</script>
+
+</body>
+</html>

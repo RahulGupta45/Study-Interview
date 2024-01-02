@@ -1,0 +1,23 @@
+<html lang="en">
+<body>
+<button onclick="displayArray()">Display</button>
+<p id="display"/>
+
+<script>
+	
+	function displayArray(){
+		text = "<ul>"
+		
+		names = ["Rohit","Virat","Ashwin","Hardik","Pant"];
+		
+		for(index = 0; index<names.length;++index)
+			text+="<li>" + names[index] +"</li>";
+		
+		text+="</ul>"
+		document.getElementById("display").innerHTML = text;
+	}
+</script>
+
+
+</body>
+</html>

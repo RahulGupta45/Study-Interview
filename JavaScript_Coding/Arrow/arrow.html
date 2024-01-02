@@ -1,0 +1,21 @@
+<html lang="en">
+<body>
+<button onclick="callArrowFunction()">Arrow Function </button>
+<button onclick="callArrowFunction2()">Arrow Function 2</button>
+
+<script>
+	
+	display = () => alert("This is an arrow function.... ");
+	
+	function callArrowFunction(){
+			//display();
+	}
+	
+	sum = (x,y) => x+y;
+	function callArrowFunction2(){
+			alert("Result is : "+sum(20,30));
+	}
+</script>
+
+</body>
+</html>

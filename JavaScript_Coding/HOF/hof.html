@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class ="container">
+		<br/>
+		<button class="btn btn-success" onclick="hoc()">HOF </button>
+	</div>
+<script>
+
+	hoc = () =>{
+		
+		alert(calculate(sum,0,[1,2,3,4,5]));
+		alert(calculate(product,1,[10,20,3]));
+		
+	}
+	
+	calculate =(operation,initialValue,data) => {
+		total = initialValue;
+		
+		for(d1 of data)
+			total = operation(d1,total);
+			
+		return total;
+	}
+	sum = (data1,data2) => data1 +data2;
+	product = (data1,data2) => data1 *data2;
+	
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<html lang="en">
+<body>
+<button onclick="displayEmployeeInfo()">Display Employee Information</button>
+
+<script>
+	
+	class Employee{
+		id = "10";
+		name = "Rahul";
+		dept = "Comp";
+		designation = "Front End Dev";
+	}
+	
+	empObj = new Employee();
+	
+	strData = "Given data is :: Id: " +empObj.id+"Name: "+empObj.name+" Dept: "+empObj.dept+" Desig: "+empObj.designation
+	displayEmployeeInfo = () => alert(strData);
+</script>
+
+</body>
+</html>

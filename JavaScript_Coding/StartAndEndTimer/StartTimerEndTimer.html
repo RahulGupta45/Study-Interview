@@ -1,0 +1,16 @@
+<html lang="en">
+<body>
+<p id="display"/> 
+<button onclick="clearInterval(timerId)">Stop the clock</button>
+<script>
+	
+	timerId = setInterval(function(){displayTime()},1000);
+	
+	function displayTime(){
+		let dateVar = new Date();
+		document.getElementById("display").innerHTML = "Current Date & Time: "+ dateVar.toLocaleTimeString();
+	}
+</script>
+
+</body>
+</html>
