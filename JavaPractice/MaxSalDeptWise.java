@@ -60,5 +60,15 @@ public class MaxSalDeptWise {
 
         List<String> list = List.of(new String[]{"hi", "hello", "bye"});
         System.out.println(list.stream().sorted((a1,a2) -> a2.length()-a1.length()).collect(Collectors.toList()));
+
+        List<Student> ls=new ArrayList<>();
+        ls.add(new Student(1,"Prasad", Arrays.asList(20,30,40,60)));
+        ls.add(new Student(2,"Pratiksha",Arrays.asList(20,30,80,90)));
+        ls.add(new Student(3,"Prasanthi",Arrays.asList(20,30,10,90)));
+
+        List<Student> collect = ls.stream().filter(stu -> stu.getMarks().stream().filter(mark -> mark > 80).count() >=
+                1).collect(Collectors.toList());
+        System.out.println(collect);
+
     }
 }
